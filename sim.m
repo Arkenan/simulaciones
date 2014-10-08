@@ -15,11 +15,11 @@ endfunction
 f = @(x,t) s1(x,t,c);
 
 for t = [0:pasoT:T]
-  print(f(x,t))
-  plot( x, f(x,t) );
+  f(x,t)
+  plot( x, f(x,t),"." );
   axis([0,topeX,-1,1]);
-  nombreImagen = sprintf("%05d.jpg",t/pasoT);
-  print("-djpg",nombreImagen);
+  nombreImagen = sprintf("%05d.png",t/pasoT);
+  print("-dpng",nombreImagen);
 endfor
 
 cd ..
