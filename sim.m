@@ -24,7 +24,7 @@ f1 = estacionaria(@sin,c)
 f2 = estacionaria(@(x) triangular(x,1,pi),c)
 
 for t = [0:pasoT:T]
-  plot( x, f1(x,t),x,f2(x,t),"." );
+  plot( x, f1(x,t),x,f2(x,t),"-" );
   axis([0,topeX,-1,1]);
   nombreImagen = sprintf("%05d.png",t/pasoT);
   print("-dpng",nombreImagen);
