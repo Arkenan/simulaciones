@@ -1,4 +1,4 @@
-simulaciones
+Simulaciones
 ============
 
-Scripts y cosas de octave para visualizar ondas y otros fenomenos temporales.
+Scripts de bash y octave para visualizar señales variables en el tiempo
